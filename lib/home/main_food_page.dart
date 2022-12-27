@@ -19,8 +19,10 @@ class _MainFoodPageState extends State<MainFoodPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: AppColors.backgroundColor,
         body: Column(
       children: [
+            //this is the header section
         Container(
           child: Container(
               margin: EdgeInsets.only(
@@ -56,6 +58,7 @@ class _MainFoodPageState extends State<MainFoodPage> {
                             child: Icon(Icons.search, color: Colors.white)))
                   ])),
         ),
+            //this is the body section
         FoodPageBody()
       ],
     )
